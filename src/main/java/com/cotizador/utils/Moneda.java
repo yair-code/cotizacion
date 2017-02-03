@@ -1,7 +1,5 @@
 package com.cotizador.utils;
 
-import org.hibernate.validator.internal.metadata.aggregated.rule.ReturnValueMayOnlyBeMarkedOnceAsCascadedPerHierarchyLine;
-
 /**
  * Created by yairlisa on 1/27/17.
  */
