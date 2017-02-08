@@ -30,8 +30,7 @@ public class CotizacionDolar implements ICotizacion {
         String cotizactionResourceUrl = "https://www.bancoprovincia.com.ar/Principal/Dolar";
         String response = restTemplate.getForObject(cotizactionResourceUrl, String.class);
 
-        String bodyResponse = response.substring(1, response.length()-1);
-        String cotizacionActual = bodyResponse.split(",")[0];
+        String cotizacionActual = response.substring(1, response.length()-1);
 
         return cotizacionActual;
     }
